@@ -16,7 +16,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero.jpg');
     background-size: cover;
     height: 100vh;
-    background-attachment: fi
+    background-attachment: fixed;
 }
 
 .row {
@@ -27,18 +27,19 @@ html {
 }
 
 .hero-text-box {
-    width: 1140px;
+    max-width: 1140px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 150%;
+    font-size: 140%;
     text-transform: uppercase;
+
 }
 
 .hero-text-box h1 {
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .logo {
@@ -174,6 +175,7 @@ h2:after {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 0px;
+    width: 100%;
    
 }
 
@@ -218,6 +220,22 @@ h2:after {
     text-align: center;
     padding: 5px;
     float: left;
+    left: 0;
     font-size: 150%;
     margin-right: 25px;
+    
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.phone {
+    width: 200px;
+    height: auto;
+    margin-left: 30%;
+}
+.griddy2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
