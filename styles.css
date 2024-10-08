@@ -233,9 +233,84 @@ h2:after {
 .phone {
     width: 200px;
     height: auto;
-    margin-left: 30%;
+    text-align: left;
 }
 .griddy2 {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.grid-steps img {
+    float: right;
+    margin-right: 50px;
+}
+
+.citygrid {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.city-item {
+    align-items: left;
+    flex-direction: column;
+}
+
+.city-image {
+    width: 90%;
+    margin: auto;
+}
+
+.lisbon {
+    margin-left: 30px;
+}
+
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
+    color: #fff;
+    background-attachment: fixed;
+    padding-top: 25px;
+    margin-top: 50px;
+    
+}
+
+.testimonials h2 {
+    margin-top: 50px;
+}
+
+.quotegrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3vw;
+    font-style: italic;
+    
+}
+
+.quotes img{
+    display: inline;
+    width: 50px;
+    border-radius: 50%;
+}
+
+cite {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+}
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
 }
