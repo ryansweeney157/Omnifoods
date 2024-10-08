@@ -10,7 +10,20 @@
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+<style>
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 
+    .form-group label {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+   
+</style>
     <title>Document</title>
 </head>
 <body>
@@ -255,5 +268,66 @@
 </div>
 </section>
     
+
+
+ 
+
+<div class="map-box">
+        
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24434.626803390103!2d-76.283904!3d40.045772799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1728413300160!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+   
+   <div class="form-box">
+    <div class="row">
+        <h2 style="text-align: center;">We're happy to hear from you</h2>
+    </div>
+    <div class="row">
+        <form method="post" action="#" class="contact-form">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="find-us">How did you find us?</label>
+                    <select name="find-us" id="find-us">
+                        <option value="friends" selected>Friends</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Newsletter?</label>
+                    <input type="checkbox" name="news" id="news" checked> Yes, please
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Drop us a line</label>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Send it!" class="buttn buttn-full" style="width: 100px;">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+   </div>
+   
+</div>
 </body> 
 </html>
