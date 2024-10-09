@@ -800,4 +800,13 @@ footer {
     
 }
 
+.hero-text-box {
+    font-size: 100%;
+
+    width: 80%;
+}
+
+.navigation {
+    font-size: 80%;
+}
 }
