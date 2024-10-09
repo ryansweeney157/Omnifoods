@@ -22,6 +22,13 @@
         margin-right: 10px;
     }
 
+    
+@media screen and (max-width: 767px) {
+    .form-group {
+        display:block;
+    }
+}
+
    
 </style>
     <title>Document</title>
@@ -37,16 +44,20 @@
         <li><a href="#">Our Cities</a></li>
         <li><a href="#">Sign up</a></li>
     </ul>
-    <ul class="new-nav">
-        <ion-icon name="menu-outline"></ion-icon>
-        <li><a href="#">Food deliveery</a></li>
+    <button class="hamburger" onclick="toggleMenu()">
+        <ion-icon name="menu-outline" style="color: white;"></ion-icon>
+    </button>
+    
+    <ul class="mobile-navigation" id="mobile-nav">
+        <li><a href="#">Food delivery</a></li>
         <li><a href="#">How it works</a></li>
         <li><a href="#">Our Cities</a></li>
         <li><a href="#">Sign up</a></li>
     </ul>
+    
     </div>
 `  </div>
-</nav>
+
 
 <div class="hero-text-box">
 <h1>Goodbye Junkfood. <br> Hello Super healthy meals</h1>
@@ -140,35 +151,44 @@
 <div class="citygrid">
 <div class="city-item lisbon">
     <img class="city-image" src="images/lisbon-3.jpg">
+    <div class="text">
     <h3>Lisbon</h3>
     <p<ion-icon name="person-outline" class="city-icon"></ion-icon>1600+ happy eaters</p>
     <p><ion-icon name="star-outline" class="city-icon"></ion-icon>60+ top chefs</p>
     <p><ion-icon name="logo-twitter" class="city-icon"></ion-icon><a href="#">@omnifood_ix</a></p>
+    </div>
 </div>
 <div class="city-item">
     <img class="city-image" src="images/san-francisco.jpg">
+    <div class="text">
     <h3>San francisco</h3>
     <p><ion-icon name="person-outline" class="city-icon"></ion-icon>3700+ happy eaters</p>
     <p><ion-icon name="star-outline" class="city-icon"></ion-icon>160+ top chefs</p>
     <p><ion-icon name="logo-twitter" class="city-icon"></ion-icon><a href="#">@omnifood_sf</a></p>
+    </div>
 </div>
 <div class="city-item">
     <img class="city-image" src="images/berlin.jpg">
+    <div class="text">
     <h3>Berlin</h3>
     <p><ion-icon name="person-outline" class="city-icon"></ion-icon>2300+ happy eaters</p>
     <p><ion-icon name="star-outline" class="city-icon"></ion-icon>110+ top chefs</p>
     <p><ion-icon name="logo-twitter" class="city-icon"></ion-icon><a href="#">@omnifood_berlin</a></p>
+    </div>
 
 </div>
 <div class="city-item">
     <img class="city-image" src="images/london.jpg">
+    <div class="text">
     <h3>London</h3>
     <p><ion-icon name="person-outline" class="city-icon"></ion-icon>1200+ happy eaters</p>
     <p><ion-icon name="star-outline" class="city-icon"></ion-icon>50+ top chefs</p>
     <p><ion-icon name="logo-twitter" class="city-icon"></ion-icon><a href="#">@omnifood_london</a></p>
 </div>
+</div>
 
 </div>
+
 
 <div class="testimonials">
     <div class="row">
@@ -282,7 +302,7 @@
 <div class="map-box">
         
     <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24434.626803390103!2d-76.283904!3d40.045772799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1728413300160!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-   
+   <div class="erything">
    <div class="form-box">
     <div class="row">
         <h2 style="text-align: center;">We're happy to hear from you</h2>
@@ -366,6 +386,11 @@
         </p>
     </div>
 </footer>
-<script src="script.js"></script>
+<script>
+    function toggleMenu() {
+        var mobileNav = document.getElementById("mobile-nav");
+        mobileNav.classList.toggle("show");
+}
+</script>
 </body> 
 </html>

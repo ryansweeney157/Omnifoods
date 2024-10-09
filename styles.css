@@ -11,7 +11,42 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 } 
+.hamburger {
+    display: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 300%;
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+.mobile-navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20%;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+
+}
+
+
+.mobile-navigation li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero.jpg');
     background-size: cover;
@@ -213,23 +248,27 @@ h2:after {
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
-    display: inline-block;
     border-radius: 50%;
     height: 55px;
     width: 55px;
     text-align: center;
     padding: 5px;
-    float: left;
     left: 0;
+    float: left;
     font-size: 150%;
     margin-right: 25px;
     
 }
 
+
 .works-step {
     margin-bottom: 50px;
+    
 }
 
+.works-step p {
+    margin: 0;
+}
 .phone {
     width: 200px;
     height: auto;
@@ -253,18 +292,22 @@ h2:after {
 }
 
 .city-item {
-    align-items: left;
     flex-direction: column;
+    text-align: left;
 }
 
 .city-image {
     width: 90%;
-    margin: auto;
+    display: block;
+    margin:0 auto;
 }
 
-.lisbon {
-    margin-left: 30px;
+.text {
+    margin-left: 2.5%;
+    font-size: 18px;
 }
+
+
 
 .testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
@@ -304,6 +347,7 @@ blockquote {
     font-style: italic;
     line-height: 145%;
     position: relative;
+    height: 433px;
 }
 
 blockquote:before {
@@ -465,9 +509,6 @@ iframe {
    
 }
 
-.map-box {
-    
-}
 
 .buttn.buttn-full {
     display: inline-block;
@@ -547,6 +588,216 @@ footer p {
 
     .navigation {
         display: none;
+
     }
+
+    .hamburger  {
+        display: block;
+    }
+
+    .mobile-navigation.show {
+        display: block;
+        max-height: 500px;
+    }
+
+    .flexy {
+        display: block;
+    }
+
+    .griddy2 {
+        display: block;
+    }
+    
+    .grid-steps img {
+        display: block;
+        float:none;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+
+    .citygrid {
+        display: block;
+        width: 100%;
+    }
+
+    .city-item {
+        width: 100%;
+        text-align: left; 
+        
+    }
+
+
+    .city-image {
+        width: 90%;
+        display: block; 
+        margin: 0 auto;
+    }
+
+    .lisbon {
+        margin: 0;
+    }
+
+    .text {
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+
 }
     
+@media screen and (max-width: 767px) {
+    .quotegrid {
+        display: block;
+    }
+
+    blockquote {
+        height: auto;
+    }
+
+    cite {
+        margin-bottom: 25px;
+    }
+
+    .plangrid {
+        display: block;
+        
+    }
+
+    .plans {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    
+    .map-box {
+        display: block;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .map {
+        display: block;
+        width: 100%;
+        height: 200px;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+.form-box {
+    width: 80%;
+    background-color: #fff;
+    z-index: 1;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 200px;
+    margin-right: 10%;
+}
+
+.erything {
+    width: 100%;
+}
+
+form {
+    margin: 0 auto;
+}
+
+iframe {
+    height: 200px;
+}
+
+footer {
+    display: block;
+    margin-top:900px;
+}
+
+.contact-form {
+    margin: 0 auto;
+}
+
+.form-group {
+    display: block;
+}
+
+
+.citygrid {
+    display: block;
+    width: 100%;
+}
+
+.city-item {
+    width: 100%;
+    text-align: left; 
+    
+}
+
+
+.city-image {
+    width: 90%;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.lisbon {
+    margin: 0;
+}
+
+.text {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.flex2 {
+    display: block;
+    font-size: 15px;
+}
+
+.footer-nav {
+    justify-content:center;
+}
+
+.social-links {
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.flexy {
+    display: block;
+}
+
+.griddy2 {
+    display: block;
+}
+
+.grid-steps img {
+    display: block;
+    float:none;
+    margin: 0 auto;
+    width: 40%;
+}
+
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    left: 0;
+    font-size: 150%;
+    margin-right: 25px;
+    
+}
+
+}
